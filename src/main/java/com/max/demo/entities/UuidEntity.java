@@ -15,7 +15,7 @@ public class UuidEntity {
     private UUID id;
 
     public UUID getId() {
-        return id;;
+        return id;
     }
 
     public void setId(UUID id) {
