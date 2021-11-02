@@ -20,7 +20,7 @@ public class CourseController {
     @GetMapping("/{id}")
     public Course course(@PathVariable UUID id) {
         return courseRepository.findById(id)
-                .orElseThrow(() -> new NullPointerException(String.format("Can not find course by ID [%s] ", id)));
+                .orElseThrow(() -> new NullPointerException(String.format("Can not find course by ID [%s]", id)));
     }
 
     @DeleteMapping("/{id}")
