@@ -33,9 +33,9 @@ public class CourseController {
 
     @GetMapping("/all")
     public List<Course> course() {
+
         return
             courseRepository.findAll();
-
     }
 
     @PostMapping
